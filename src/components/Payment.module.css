@@ -1,0 +1,141 @@
+.pay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.extra {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.summary {
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 50vw;
+}
+
+.title {
+  color: lightcoral;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 5vh;
+}
+
+.bill {
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.billItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.billItem span {
+  font-weight: 500;
+}
+
+.total {
+  font-weight: bold;
+  color: #d6336c;
+  background-color: #fffbcc;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.comboCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comboContent {
+  display: flex;
+  align-items: center;
+}
+
+.comboImage {
+  width: 80px;
+  height: auto;
+  margin-right: 16px;
+}
+
+.comboDetails {
+  flex: 1;
+}
+
+.comboTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.comboDescription {
+  font-size: 14px;
+  color: #757575;
+  margin: 4px 0;
+}
+
+.comboFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comboPrice {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.addButton {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 156, 39);
+}
+
+.addButton:hover {
+  background-color: #6eff84;
+}
+
+.removeButton {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.removeButton:hover {
+  background-color: #ff0000;
+}
