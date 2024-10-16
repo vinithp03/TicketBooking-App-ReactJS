@@ -1,7 +1,7 @@
 import React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'; // Import Navigate for redirection
 import App from './App.jsx';
 import Payment from './components/Payment.jsx';
 import MainPage from './routes/MainPage.jsx';
@@ -12,6 +12,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
+      {
+        path: '/',
+        element: <Navigate to="/home" />,
+      },
       {
         path: 'home',
         element: <Home />,
