@@ -88,7 +88,7 @@ const Payment = () => {
                     <div className={styles.comboFooter}>
                       <span className={styles.comboPrice}>₹{ele.price}</span>
                       <button className={styles.addButton} onClick={() => { billHandle(ele.price, ele.id) }}>{quantity[ele.id] ? quantity[ele.id] : "Add"}</button>
-                      <button className={styles.removeButton} onClick={() => removeItem(ele.price, ele.id)}>Remove</button>
+                      {quantity[ele.id] > 0 && <button className={styles.removeButton} onClick={() => removeItem(ele.price, ele.id)}>Remove</button>}
                     </div>
                   </div>
                 </div>
